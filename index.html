@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title> Utsav Kumar — Portfolio</title>
 
-  <!-- ====== Styles: You can move this to style.css ====== -->
+  
   <style>
     :root{
       --bg: #0f1724;
@@ -144,7 +144,6 @@
 
             
 
-        <!-- Font Awesome CDN (add in <head>) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <aside>
@@ -221,9 +220,8 @@
     </div>
   </main>
 
-  <!-- ====== Scripts: You can move this to script.js ====== -->
   <script>
-    // Smooth scroll for anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
@@ -233,7 +231,7 @@
       });
     });
 
-    // Simple contact form behaviour (client-only demo)
+    
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', function(e){
       e.preventDefault();
@@ -246,7 +244,6 @@
         return;
       }
 
-      // For demo, store message in localStorage (you can later connect to backend)
       const messages = JSON.parse(localStorage.getItem('messages') || '[]');
       messages.push({name, email, message, time: new Date().toISOString()});
       localStorage.setItem('messages', JSON.stringify(messages));
@@ -255,7 +252,7 @@
       form.reset();
     });
 
-    // Download resume - create a simple text resume blob for demo (replace with your PDF link)
+   
     document.getElementById('downloadResume').addEventListener('click', function(){
       const resumeText = `Utsav Kumar\nAspiring Software Developer\nSkills: C++, DSA, HTML/CSS/JS, Git\nEmail: anirudh.email@example.com`;
       const blob = new Blob([resumeText], {type: 'text/plain'});
@@ -266,14 +263,14 @@
       URL.revokeObjectURL(url);
     });
 
-    // Clear contact form
+   
     document.getElementById('clearBtn').addEventListener('click', function(){
       if(confirm('Clear the form?')) document.getElementById('contactForm').reset();
     });
 
-    // Example: replace placeholders with your GitHub/LinkedIn links automatically
-    // (update linking targets in the HTML to your actual profiles for final use)
+    
   </script>
 </body>
 </html>
+
 
