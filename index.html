@@ -3,98 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Utsav Kumar — Portfolio</title>
-
+  <title>Utsav Kumar — Portfolio</title>
   
-  <style>
-    :root{
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #9aa4b2;
-      --accent: #1f6feb;
-      --glass: rgba(255,255,255,0.03);
-      --glass-2: rgba(255,255,255,0.04);
-      --radius: 12px;
-      --max-width: 980px;
-      --mono: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
-    *{box-sizing: border-box}
-    html,body{height:100%;}
-    body{
-      margin:0;
-      font-family: var(--mono);
-      background: linear-gradient(180deg,#071029 0%, #071a2a 60%);
-      color: #e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-    }
-    .container{
-      width:90%;
-      max-width:var(--max-width);
-      margin: 0 auto;
-      padding: 32px 0 80px;
-    }
-
-    /* header / nav */
-    header{
-      position:sticky;top:0;z-index:40;background:transparent;padding:18px 0;backdrop-filter: blur(6px);
-    }
-    .nav{
-      display:flex;align-items:center;justify-content:space-between;gap:20px;
-    }
-    .brand{font-weight:700;letter-spacing:0.2px}
-    .brand .dot{color:var(--accent)}
-    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
-    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
-    nav a:hover{color: #fff;background:var(--glass-2)}
-
-    /* Hero */
-    .hero{
-      display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center;padding:48px 0;
-    }
-    .intro h1{font-size:clamp(28px,4vw,44px);margin:0 0 8px}
-    .intro p.lead{color:var(--muted);margin:0 0 18px}
-    .cta{display:flex;gap:12px;align-items:center}
-    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer}
-    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:10px 14px;border-radius:10px}
-
-    /* card */
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);
-    }
-
-    /* skills & projects */
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:24px}
-    .skills ul, .projects ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
-    .skills li, .projects li{background:var(--glass);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:14px}
-
-    /* contact */
-    .contact-form{display:flex;flex-direction:column;gap:12px}
-    input, textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
-    textarea{min-height:120px;resize:vertical}
-
-    footer{margin-top:48px;color:var(--muted);text-align:center;font-size:14px}
-
-    /* responsive */
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr;}
-      .grid{grid-template-columns:1fr}
-      nav ul{display:none}
-      .nav-right{display:flex;gap:10px}
-    }
-
-    /* small niceties */
-    .muted{color:var(--muted)}
-    .project-card{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
-    .project-card h3{margin:0 0 6px}
-    .project-links{display:flex;gap:8px;margin-top:10px}
-    .pill{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
-
-    /* small logo circle */
-    .avatar{width:110px;height:110px;border-radius:50%;display:inline-block;background:linear-gradient(135deg,#1f6feb,#4dd0e1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:white}
-  </style>
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -110,8 +24,8 @@
           </ul>
         </nav>
         <div class="nav-right">
-          <a class="pill" href="https://github.com/utsavkumarbhagat" target="_blank" rel="noopener">GitHub</a>
-          <a class="pill" href="https://www.linkedin.com/in/utsav-kumar-bhagat" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="pill" href="https://github.com/utsavkumarbhagat" target="_blank">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/utsav-kumar-bhagat" target="_blank">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -119,6 +33,7 @@
 
   <main>
     <div class="container">
+      <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="intro">
           <h1>Hi — I'm <span style="color:var(--accent)">Utsav</span></h1>
@@ -133,35 +48,26 @@
               <h3>Key Skills</h3>
               <div class="skills">
                 <ul>
-                  <li>C#, C++, OOPs</li>
+                  <li>C, C++, OOPs</li>
                   <li>Data Structures & Algorithms</li>
                   <li>HTML & CSS</li>
-                  <li>JavaScript </li>
-                  
+                  <li>JavaScript</li>
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
 
-            
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<aside>
-  <div class="card" style="padding:15px; font-size:14px; color:#ddd; background:rgba(255,255,255,0.03);">
-    <h3 style="margin:0 0 10px 0; color:#fff; text-align:left;">Contact</h3>
-    <p class="muted" style="margin:4px 0; text-align:left;">
-      <i class="fa-solid fa-envelope"></i> utsavkumartbj@gmail.com
-    </p>
-    <p class="muted" style="margin:4px 0; text-align:left;">
-      <i class="fa-solid fa-phone"></i> +91 7491077370
-    </p>
-  </div>
-</aside>
-
-
+        <aside>
+          <div class="card contact-card">
+            <h3>Contact</h3>
+            <p class="muted"><i class="fa-solid fa-envelope"></i> utsavkumartbj@gmail.com</p>
+            <p class="muted"><i class="fa-solid fa-phone"></i> +91 7491077370</p>
+          </div>
+        </aside>
       </section>
 
-      
+      <!-- About Section -->
       <section id="about">
         <div class="card">
           <h2>About Me</h2>
@@ -175,24 +81,22 @@
         </div>
       </section>
 
-      
+      <!-- Projects Section -->
       <section id="projects">
-        <h2 style="text-align:left">Projects</h2>
+        <h2>Projects</h2>
         <div class="grid">
           <div class="project-card card">
-            <h3>Personal Portfolio Website (Deployed on GitHub Pages) </h3>
-            <p class="muted">Responsive single-file portfolio built with HTML, CSS and JS — hosted on GitHub Pages.</p>
+            <h3>Personal Portfolio Website</h3>
+            <p class="muted">Responsive portfolio built with HTML, CSS, and JS — deployed on GitHub Pages.</p>
             <div class="project-links">
-              <a class="pill" href="https://github.com/utsavkumarbhagat/Portfolio.git" target="_blank" >Open Source</a>
+              <a class="pill" href="https://github.com/utsavkumarbhagat/Portfolio" target="_blank">Open Source</a>
               <a class="pill" href="https://utsavkumarbhagat.github.io/Portfolio/" target="_blank">Live Demo</a>
             </div>
           </div>
-
-          
-
+        </div>
       </section>
 
-      <!-- Contact -->
+      <!-- Contact Form -->
       <section id="contact" style="margin-top:18px">
         <div class="card">
           <h2>Contact Me</h2>
@@ -200,7 +104,7 @@
             <input type="text" id="name" name="name" placeholder="Your name" required />
             <input type="email" id="email" name="email" placeholder="Your email" required />
             <textarea id="message" name="message" placeholder="Write a message" required></textarea>
-            <div style="display:flex;gap:10px">
+            <div class="form-buttons">
               <button type="submit" class="btn">Send Message</button>
               <button type="button" id="clearBtn" class="btn-outline">Clear</button>
             </div>
@@ -208,69 +112,15 @@
         </div>
       </section>
 
-      <footer style="text-align: center; font-size: 14px; color: #555; margin-top: 20px;">
-  <p>
-    Technical Proficiencies: C++ • Data Structures & Algorithms • HTML • CSS • JavaScript
-  </p>
-  <p class="muted">
-    GitHub: <a href="https://github.com/utsavkumarbhagat" target="_blank">utsavkumarbhagat</a>
-  </p>
-</footer>
-
+      <!-- Footer -->
+      <footer>
+        <p>Technical Proficiencies: C++ • DSA • HTML • CSS • JavaScript</p>
+        <p class="muted">GitHub: <a href="https://github.com/utsavkumarbhagat" target="_blank">utsavkumarbhagat</a></p>
+      </footer>
     </div>
   </main>
 
-  <script>
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if(!target) return; // allow links that are '#'
-        e.preventDefault();
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    });
-
-    
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
-
-      if(!name || !email || !message){
-        alert('Please fill all fields.');
-        return;
-      }
-
-      const messages = JSON.parse(localStorage.getItem('messages') || '[]');
-      messages.push({name, email, message, time: new Date().toISOString()});
-      localStorage.setItem('messages', JSON.stringify(messages));
-
-      alert('Thank you ' + name + '! Your message is saved (demo).');
-      form.reset();
-    });
-
-   
-    document.getElementById('downloadResume').addEventListener('click', function(){
-      const resumeText = `Utsav Kumar\nAspiring Software Developer\nSkills: C++, DSA, HTML/CSS/JS, Git\nEmail: anirudh.email@example.com`;
-      const blob = new Blob([resumeText], {type: 'text/plain'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'Utsav_Kumar_Resume.txt';
-      document.body.appendChild(a); a.click(); a.remove();
-      URL.revokeObjectURL(url);
-    });
-
-   
-    document.getElementById('clearBtn').addEventListener('click', function(){
-      if(confirm('Clear the form?')) document.getElementById('contactForm').reset();
-    });
-
-    
-  </script>
+  <!-- JS file link -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-
